@@ -1,0 +1,40 @@
+
+package desafios;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Desafio1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(new Locale("pt", "BR"));
+
+		Double preco = 0.0;
+		int qtd = 0, contador, totalC = 0, totalE = 0, totalV = 0;
+		char categoria = 'A';
+
+		for (contador = 0; contador < 3; contador++) {
+			System.out.printf("Dados do produto %d\n", contador + 1);
+
+			while (preco <= 0) {
+				System.out.println("Preço: ");
+				preco = sc.nextDouble();
+			}
+
+			while (qtd <= 0) {
+				System.out.println("Quantidade: ");
+				qtd = sc.nextInt();
+			}
+			while (categoria != 'C' && categoria != 'E' && categoria != 'V') {
+				System.out.println("Categoria (C, E ou V): ");
+				categoria = sc.next().charAt(0);
+				categoria = Character.toUpperCase(categoria);
+			}
+
+		}
+
+		sc.close();
+	}
+
+}
