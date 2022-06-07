@@ -14,7 +14,7 @@ public class Desafio1 {
 		int qtd, contador;
 		char categoria;
 
-		for (contador = 0; contador < 15; contador++) {
+		for (contador = 0; contador < 6; contador++) {
 			System.out.printf("Dados do produto %d\n", contador + 1);
 			categoria = 'A';
 			qtd = 0;
@@ -70,9 +70,9 @@ public class Desafio1 {
 		System.out.printf("Vestuário : R$%.2f.\n",totalV*0.3842);
 		
 		System.out.println("\nLucro de cada categoria:");
-		System.out.printf("Cama, mesa e banho : R$%.2f.\n",totalC*0.30);
-		System.out.printf("Eletrodomésticos : R$%.2f.\n",totalE*0.35);
-		System.out.printf("Vestuário : R$%.2f.\n",totalV*0.50);
+		System.out.printf("Cama, mesa e banho : R$%.2f.\n",totalC*1.3741*0.30);
+		System.out.printf("Eletrodomésticos : R$%.2f.\n",totalE*1.4314*0.35);
+		System.out.printf("Vestuário : R$%.2f.\n",totalV*1.3842*0.50);
 		sc.close();
 	}
 

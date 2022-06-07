@@ -14,7 +14,7 @@ public class Desafio1 {
 		int qtd, contador;
 		char categoria;
 
-		for (contador = 0; contador < 15; contador++) {
+		for (contador = 0; contador < 6; contador++) {
 			System.out.printf("Dados do produto %d\n", contador + 1);
 			categoria = 'A';
 			qtd = 0;
